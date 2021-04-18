@@ -19,6 +19,11 @@ namespace MiCalculadora
             Operador.Text = " ";
         }
 
+        /// <summary>
+        /// Boton para realizar la operacion seleccionada con los numeros ingresados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado;
@@ -28,16 +33,31 @@ namespace MiCalculadora
             Resultado.Text = Convert.ToString(resultado);
         }
 
+        /// <summary>
+        /// Llama a la funcion limpiar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             Limpiar();
         }
 
+        /// <summary>
+        /// Cierra el form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        /// <summary>
+        /// Boton que convierte el numero decimal a binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBinario_Click(object sender, EventArgs e)
         { 
             if(Resultado.Text != null)
@@ -48,6 +68,11 @@ namespace MiCalculadora
             }
         }
 
+        /// <summary>
+        /// Boton que convierte un binario a decimal
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDecimal_Click(object sender, EventArgs e)
         {
             Numero binario = new Numero(Resultado.Text);
@@ -55,6 +80,9 @@ namespace MiCalculadora
             Resultado.Text = binario.BinarioDecimal(Resultado.Text);
         }
 
+        /// <summary>
+        /// Limpia del form los numeros, el operador y el resultado
+        /// </summary>
         private void Limpiar()
         {
             this.Numero1.Clear();
@@ -63,6 +91,13 @@ namespace MiCalculadora
             this.Resultado.Text = null;
         }
 
+        /// <summary>
+        /// Realiza la operacion con los numeros y el operador seleccionado
+        /// </summary>
+        /// <param name="numero1">Primer numero ingresado</param>
+        /// <param name="numero2">Segundo numero ingresado</param>
+        /// <param name="operador">Operador seleccionado</param>
+        /// <returns>Retorna el valor de la operacion realizada</returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             Numero n1 = new Numero(numero1);
