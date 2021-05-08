@@ -6,26 +6,40 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    /// <summary>
-    /// No podrá tener clases heredadas.
-    /// </summary>
     public class Taller
     {
+        #region "Atributos"
         private List<Vehiculo> vehiculos;
         private int espacioDisponible;
+        #endregion
 
+        #region "Enum"
+        /// <summary>
+        /// Lista de elementos de tipo enmum de Tipos
+        /// </summary>
         public enum ETipo
         {
-            Ciclomotor, Sedan, SUV, Todos
+            Ciclomotor, 
+            Sedan, 
+            SUV, 
+            Todos
         }
+        #endregion
 
         #region "Constructores"
 
+        /// <summary>
+        /// Constructor privado de taller que crea una lista de vehiculos
+        /// </summary>
         private Taller()
         {
             this.vehiculos = new List<Vehiculo>();
         }
 
+        /// <summary>
+        /// Constructor publico que asigna espacio y llama al constructor privado
+        /// </summary>
+        /// <param name="espacioDisponible">Le asigna el espacio al espacioDisponible chasi</param>
         public Taller(int espacioDisponible):this()
         {
             this.espacioDisponible = espacioDisponible;
@@ -34,9 +48,9 @@ namespace Entidades
 
         #region "Sobrecargas"
         /// <summary>
-        /// Muestro el estacionamiento y TODOS los vehículos
+        /// Sobrecargo el metodo ToString para listar todos los vehiculos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Retorna el listado de todos los vehiculos</returns>
         public override string ToString()
         {
             return Listar(this, ETipo.Todos);
@@ -46,12 +60,11 @@ namespace Entidades
         #region "Métodos"
 
         /// <summary>
-        /// Expone los datos del elemento y su lista (incluidas sus herencias)
-        /// SOLO del tipo requerido
+        /// Metodo que muestra todos los vehiculos dependiendo el tipo pasado por parametro
         /// </summary>
-        /// <param name="taller">Elemento a exponer</param>
-        /// <param name="ETipo">Tipos de ítems de la lista a mostrar</param>
-        /// <returns></returns>
+        /// <param name="taller">la lista de vehiculos que posee taller</param>
+        /// <param name="tipo">El Enum del tipo de vehiculo que se quiere mostrar</param>
+        /// <returns>Retorna la lista de vehiculos en forma de string</returns>
         public string Listar(Taller taller, ETipo tipo)
         {
             StringBuilder sb = new StringBuilder();
@@ -92,11 +105,11 @@ namespace Entidades
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Sobrecarga del operador +
         /// </summary>
-        /// <param name="taller">Objeto donde se agregará el elemento</param>
-        /// <param name="vehiculo">Objeto a agregar</param>
-        /// <returns></returns>
+        /// <param name="taller">Taller al cual se le añade el vehiculo</param>
+        /// <param name="vehiculo">Vehiculo a ser añadido en el taller</param>
+        /// <returns>Retorna el taller con el vehiculo agregado en caso de ser posible</returns>
         public static Taller operator +(Taller taller, Vehiculo vehiculo)
         {
             int bandera = 0;
@@ -117,12 +130,13 @@ namespace Entidades
 
             return taller;
         }
+
         /// <summary>
-        /// Quitará un elemento de la lista
+        /// Sobrecarga del operador -
         /// </summary>
-        /// <param name="taller">Objeto donde se quitará el elemento</param>
-        /// <param name="vehiculo">Objeto a quitar</param>
-        /// <returns></returns>
+        /// <param name="taller">Taller al cual se le elimina el vehiculo</param>
+        /// <param name="vehiculo">Vehiculo a ser eliminado en el taller</param>
+        /// <returns>Retorna el taller con el vehiculo eliminado en caso de ser posible</returns>
         public static Taller operator -(Taller taller, Vehiculo vehiculo)
         {
             foreach (Vehiculo v in taller.vehiculos)
