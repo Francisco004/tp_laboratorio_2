@@ -1,0 +1,20 @@
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\bin\Debug\Test.exe.config
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\bin\Debug\Test.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\bin\Debug\Test.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\bin\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\bin\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\obj\Debug\Test.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Test\obj\Debug\Test.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\bin\Debug\Test.exe.config
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\bin\Debug\Test.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\bin\Debug\Test.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\bin\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\bin\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\obj\Debug\Test.csproj.CopyComplete
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\obj\Debug\Test.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Test\obj\Debug\Test.pdb
