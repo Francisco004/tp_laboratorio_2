@@ -188,7 +188,7 @@ namespace FormFranciscoRocha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.FondoFabricaCelular;
+            this.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.FondoFormCelular;
             this.ClientSize = new System.Drawing.Size(992, 450);
             this.Controls.Add(this.ButtonUPC);
             this.Controls.Add(this.ButtonCerrar);

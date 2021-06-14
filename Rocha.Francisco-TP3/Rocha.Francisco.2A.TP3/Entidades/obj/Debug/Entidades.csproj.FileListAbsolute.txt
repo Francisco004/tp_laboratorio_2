@@ -10,3 +10,9 @@ C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\E
 C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.dll
 C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.pdb
 C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb

@@ -153,7 +153,7 @@
     <None Include="Resources\FondoFormPC.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\FondoFabricaCelular.jpg" />
+    <None Include="Resources\FondoFormCelular.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

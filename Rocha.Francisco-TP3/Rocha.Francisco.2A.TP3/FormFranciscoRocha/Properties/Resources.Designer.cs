@@ -93,9 +93,9 @@ namespace FormFranciscoRocha.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FondoFabricaCelular {
+        internal static System.Drawing.Bitmap FondoFormCelular {
             get {
-                object obj = ResourceManager.GetObject("FondoFabricaCelular", resourceCulture);
+                object obj = ResourceManager.GetObject("FondoFormCelular", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
