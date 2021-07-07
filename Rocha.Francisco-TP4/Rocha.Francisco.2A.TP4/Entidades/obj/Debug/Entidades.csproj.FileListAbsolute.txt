@@ -1,0 +1,45 @@
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb

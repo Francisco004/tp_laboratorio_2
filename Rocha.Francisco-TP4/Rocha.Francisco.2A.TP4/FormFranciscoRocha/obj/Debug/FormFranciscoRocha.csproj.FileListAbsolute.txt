@@ -1,0 +1,108 @@
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe.config
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csprojAssemblyReference.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FormPrincipal.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.Properties.Resources.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.GenerateResource.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CoreCompileInputs.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\bin\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\bin\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CopyComplete
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmProducto.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaPC.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrnMostrarProductosFabricados.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3 - copia\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaCelular.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe.config
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.pdb
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csprojAssemblyReference.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FormPrincipal.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaCelular.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaPC.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmProducto.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrnMostrarProductosFabricados.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.Properties.Resources.resources
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.GenerateResource.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CoreCompileInputs.cache
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CopyComplete
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\source\repos\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe.config
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.pdb
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csprojAssemblyReference.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FormPrincipal.resources
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaCelular.resources
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaPC.resources
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmProducto.resources
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrnMostrarProductosFabricados.resources
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.Properties.Resources.resources
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.GenerateResource.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CoreCompileInputs.cache
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CopyComplete
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\Desktop\tp_laboratorio_2\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe.config
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FormPrincipal.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaCelular.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaPC.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmProducto.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrnMostrarProductosFabricados.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CopyComplete
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmEliminar.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe.config
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmEliminar.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FormPrincipal.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaCelular.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaPC.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmProducto.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrnMostrarProductosFabricados.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CopyComplete
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\OneDrive\Desktop\Nueva carpeta\Rocha.Francisco-TP3\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe.config
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\FormFranciscoRocha.pdb
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmEliminar.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FormPrincipal.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaCelular.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmFabricaPC.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrmProducto.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.FrnMostrarProductosFabricados.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.csproj.CopyComplete
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.exe
+C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\FormFranciscoRocha\obj\Debug\FormFranciscoRocha.pdb
