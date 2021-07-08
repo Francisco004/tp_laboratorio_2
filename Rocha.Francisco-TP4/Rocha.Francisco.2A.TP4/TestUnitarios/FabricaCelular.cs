@@ -119,7 +119,7 @@ namespace TestUnitarios
         {
             Entidades.FabricaCelular Celular3 = new Entidades.FabricaCelular(MarcaCPU.QualcommSnapdragon, GPU.Adreno_650, RAM._6GB, SistemaOP.Android_Nougat, Almacenamiento._512GB, 498, Camara._16MP, Bateria._8000_mAh, MaterialCarcasa.Plastico, PantallaPulgadas._6_5, PantallaResolucion._2560x1440_Pixeles, true, false);
 
-            Assert.IsNotNull(Celular3.FixPulgadas(Celular3.PULGADAS.ToString()));
+            Assert.IsNotNull(Celular3.Fix(Celular3.PULGADAS.ToString()));
         }
 
         [TestMethod]
