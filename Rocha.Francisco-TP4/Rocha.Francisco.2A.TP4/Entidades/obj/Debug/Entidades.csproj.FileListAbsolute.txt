@@ -43,3 +43,12 @@ C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\E
 C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.dll
 C:\Users\fran_\OneDrive\Desktop\TP4\Rocha.Francisco.2A.TP3\Entidades\obj\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\obj\Debug\Entidades.Properties.Resources.resources
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\obj\Debug\Entidades.csproj.GenerateResource.cache
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2\Rocha.Francisco-TP4\Rocha.Francisco.2A.TP4\Entidades\obj\Debug\Entidades.pdb
