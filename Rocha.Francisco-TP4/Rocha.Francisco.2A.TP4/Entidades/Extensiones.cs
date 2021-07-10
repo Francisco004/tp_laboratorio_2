@@ -285,6 +285,16 @@ namespace Entidades
         {
             return "No se encontro el UPC indicado";
         }
+
+        /// <summary>
+        /// Metodo que informa la excepcion ocurrida
+        /// </summary>
+        /// <param name="excepcion">Extension de la clase NoSeEncontroException</param>
+        /// <returns>Retorna un string con el mensaje de la excepcion</returns>
+        public static string InformarExcepcionSQL(this NoSeEncontroException excepcion)
+        {
+            return "No se pudo conectar a la base de datos";
+        }
         #endregion
 
         #endregion

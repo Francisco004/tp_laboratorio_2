@@ -76,9 +76,11 @@ namespace Entidades
 
                 retorno = true;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Archivos<Producto>.LogErrores(ex.ToString());
                 retorno = false;
+                throw new NoSeEncontroException();
             }
             finally
             {
@@ -127,9 +129,11 @@ namespace Entidades
                     retorno = false;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Archivos<Producto>.LogErrores(ex.ToString());
                 retorno = false;
+                throw new NoSeEncontroException();
             }
             finally
             {
@@ -184,9 +188,10 @@ namespace Entidades
                 lector.Close();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                Archivos<Producto>.LogErrores(ex.ToString());
+                throw new NoSeEncontroException();
             }
             finally
             {

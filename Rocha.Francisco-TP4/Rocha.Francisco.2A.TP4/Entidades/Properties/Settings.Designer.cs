@@ -25,7 +25,7 @@ namespace Entidades.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=TrabajoPractico4;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=RochaFranciscoTP4;Integrated Security=True")]
         public string Conexion {
             get {
                 return ((string)(this["Conexion"]));

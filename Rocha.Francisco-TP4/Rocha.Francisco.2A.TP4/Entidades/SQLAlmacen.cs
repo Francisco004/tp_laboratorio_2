@@ -57,7 +57,7 @@ namespace Entidades
                 }
                 catch (Exception)
                 {
-
+                    throw new NoSeEncontroException();
                 }
                 finally
                 {
@@ -97,7 +97,7 @@ namespace Entidades
             }
             catch (Exception)
             {
-
+                throw new NoSeEncontroException();
             }
             finally
             {
@@ -147,9 +147,9 @@ namespace Entidades
                 lector.Close();
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine(ex.ToString());
+                throw new NoSeEncontroException();
             }
             finally
             {

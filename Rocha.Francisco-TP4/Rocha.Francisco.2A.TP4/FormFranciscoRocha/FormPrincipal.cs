@@ -33,8 +33,10 @@ namespace FormFranciscoRocha
         public FormPrincipal()
         {
             InitializeComponent();
+
             this.miAlmacen = "Productos fabricados Francisco Rocha";
             this.StartPosition = FormStartPosition.CenterScreen;
+
             this.AlmacenSQL();
         }
 
@@ -673,8 +675,9 @@ namespace FormFranciscoRocha
 
                 this.ActualizarCantidadSQL();
             }
-            catch (Exception ex)
+            catch (NoSeEncontroException ex)
             {
+                MessageBox.Show(ex.InformarExcepcionSQL());
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
         }
@@ -704,8 +707,9 @@ namespace FormFranciscoRocha
                     MessageBox.Show("El Celular fabricado seleccionado se borro de la base de datos y del almacen");
                 }
             }
-            catch (Exception ex)
+            catch (NoSeEncontroException ex)
             {
+                MessageBox.Show(ex.InformarExcepcionSQL());
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
         }
@@ -725,9 +729,9 @@ namespace FormFranciscoRocha
 
                 MessageBox.Show("Se cargaron los datos del SQL correctamente", "Carga satisfactoria");
             }
-            catch (Exception ex)
+            catch (NoSeEncontroException ex)
             {
-                MessageBox.Show("No se cargaron los datos del SQL correctamente", "Error al cargar SQL");
+                MessageBox.Show(ex.InformarExcepcionSQL());
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
         }
@@ -742,8 +746,9 @@ namespace FormFranciscoRocha
 
                 this.ActualizarCantidadSQL();
             }
-            catch (Exception ex)
+            catch (NoSeEncontroException ex)
             {
+                MessageBox.Show(ex.InformarExcepcionSQL());
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
         }
@@ -756,8 +761,9 @@ namespace FormFranciscoRocha
 
                 Almacen.ModificarCantidad(this.miAlmacen);
             }
-            catch (Exception ex)
+            catch (NoSeEncontroException ex)
             {
+                MessageBox.Show(ex.InformarExcepcionSQL());
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
         }
