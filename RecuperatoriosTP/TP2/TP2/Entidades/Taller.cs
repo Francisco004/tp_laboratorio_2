@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Taller
+    /// <summary>
+    /// No podrá tener clases heredadas.
+    /// </summary>
+    public sealed class Taller
     {
         #region "Atributos"
         private List<Vehiculo> vehiculos;

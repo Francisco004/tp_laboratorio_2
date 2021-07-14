@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// La clase Vehiculo no deberá permitir que se instancien elementos de este tipo.
+    /// </summary>
     public abstract class Vehiculo  
     {
         #region "Atributos"

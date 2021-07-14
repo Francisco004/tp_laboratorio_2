@@ -61,3 +61,13 @@ C:\Users\fran_\Desktop\Rocha.Francisco-TP2-Recuperatorio\TP-02\obj\Debug\TP-02.c
 C:\Users\fran_\Desktop\Rocha.Francisco-TP2-Recuperatorio\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 C:\Users\fran_\Desktop\Rocha.Francisco-TP2-Recuperatorio\TP-02\obj\Debug\TP-02.exe
 C:\Users\fran_\Desktop\Rocha.Francisco-TP2-Recuperatorio\TP-02\obj\Debug\TP-02.pdb
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\bin\Debug\TP-02.exe
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\bin\Debug\TP-02.pdb
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\bin\Debug\Entidades.dll
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\bin\Debug\Entidades.pdb
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\obj\Debug\TP-02.csproj.AssemblyReference.cache
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\obj\Debug\TP-02.exe
+C:\Users\fran_\OneDrive\Desktop\tp_laboratorio_2-main\RecuperatoriosTP\TP2\TP2\TP-02\obj\Debug\TP-02.pdb
