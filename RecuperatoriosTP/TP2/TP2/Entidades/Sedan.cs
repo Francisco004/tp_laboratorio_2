@@ -28,26 +28,26 @@ namespace Entidades
 
         #region "Constructores"
         /// <summary>
-        /// Constructor de sedan que asigna por defecto el valor "CuatroPuertas" al atributo "tipo"
-        /// </summary>
-        /// <param name="marca">Le asigna una marca al atributo marca de vehiculo</param>
-        /// <param name="chasis">Le asigna un chasis al atributo chasis de vehiculo</param>
-        /// <param name="color">Le asigna un color al atributo color de vehiculo</param>
-        public Sedan(EMarca marca, string chasis, ConsoleColor color) : base(chasis, marca, color)
-        {
-            this.tipo = ETipo.CuatroPuertas;
-        }
-
-        /// <summary>
         /// Constructor de sedan que le asigna un tipo pasado por parametro al atributo "tipo"
         /// </summary>
         /// <param name="marca">Le asigna una marca al atributo marca de vehiculo</param>
         /// <param name="chasis">Le asigna un chasis al atributo chasis de vehiculo></param>
         /// <param name="color">Le asigna un color al atributo color de vehiculo</param>
         /// <param name="tipo">Le asigna un tipo al atributo tipo</param>
-        public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : this(marca, chasis, color)
+        public Sedan(EMarca marca, string chasis, ConsoleColor color, ETipo tipo) : base(chasis, marca, color)
         {
             this.tipo = tipo;
+        }
+
+        /// <summary>
+        /// Constructor de sedan que asigna por defecto el valor "CuatroPuertas" al atributo "tipo"
+        /// </summary>
+        /// <param name="marca">Le asigna una marca al atributo marca de vehiculo</param>
+        /// <param name="chasis">Le asigna un chasis al atributo chasis de vehiculo</param>
+        /// <param name="color">Le asigna un color al atributo color de vehiculo</param>
+        public Sedan(EMarca marca, string chasis, ConsoleColor color) : this(marca, chasis, color, ETipo.CuatroPuertas)
+        {
+
         }
         #endregion
 
