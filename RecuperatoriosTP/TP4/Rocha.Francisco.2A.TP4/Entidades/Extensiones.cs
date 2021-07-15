@@ -305,6 +305,16 @@ namespace Entidades
         {
             return "Ingrese todos los datos correspondientes...";
         }
+
+        /// <summary>
+        /// Metodo que informa que un dato en el SQL es erroneo
+        /// </summary>
+        /// <param name="excepcion">Extension de la clase CargarTodosLosDatosException</param>
+        /// <returns>Retorna un string con el mensaje de la excepcion</returns>
+        public static string InformarDatoErroneoSQL(this DatoErroneoSQLException excepcion)
+        {
+            return "Un dato que se encuentra en la base de datos es erroneo, revise las tablas...";
+        }
         #endregion
 
         #endregion

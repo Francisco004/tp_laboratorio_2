@@ -197,10 +197,15 @@ namespace Entidades
                 lector.Close();
 
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 Archivos<Producto>.LogErrores(ex.ToString());
                 throw new ConexionSQLException();
+            }
+            catch (Exception ex)
+            {
+                Archivos<Producto>.LogErrores(ex.ToString());
+                throw new DatoErroneoSQLException();
             }
             finally
             {

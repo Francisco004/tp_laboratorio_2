@@ -16,4 +16,9 @@ namespace Entidades
     {
 
     }
+
+    public class DatoErroneoSQLException : Exception
+    {
+
+    }
 }

@@ -751,6 +751,16 @@ namespace FormFranciscoRocha
                 MessageBox.Show(ex.InformarExcepcionSQL());
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
+            catch (DatoErroneoSQLException ex)
+            {
+                MessageBox.Show(ex.InformarDatoErroneoSQL());
+                Archivos<Producto>.LogErrores(ex.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("#Error#");
+                Archivos<Producto>.LogErrores(ex.ToString());
+            }
         }
 
         private void AlmacenSQL()
