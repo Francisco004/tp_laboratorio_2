@@ -20,7 +20,7 @@ namespace Entidades
         /// </summary>
         public SQLPC()
         {
-            this.conexion = new SqlConnection(Properties.Settings.Default.Conexion);
+            this.conexion = new SqlConnection(Constante.ConexionSQL);
         }
         #endregion
 

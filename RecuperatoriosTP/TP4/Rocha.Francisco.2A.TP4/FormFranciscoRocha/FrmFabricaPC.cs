@@ -417,7 +417,7 @@ namespace FormFranciscoRocha
                 foreach (string GPUS in BorrarGuion)
                 {
                     comboBoxGPU.Items.Add(GPUS.Replace("_", " "));
-                    if (Parar == 42)
+                    if (Parar == 44)
                     {
                         Parar = 0;
                         break;

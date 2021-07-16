@@ -313,7 +313,7 @@ namespace FormFranciscoRocha
                 BorrarGuion = Enum.GetNames(typeof(GPU));
                 foreach (string GPUS in BorrarGuion)
                 {
-                    if (Parar >= 44)
+                    if (Parar >= 45)
                     {
                         comboBoxGPU.Items.Add(GPUS.Replace("_", " "));
                     }

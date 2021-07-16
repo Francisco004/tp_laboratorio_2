@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Archivos.cs" />
+    <Compile Include="Constante.cs" />
     <Compile Include="ECelular.cs" />
     <Compile Include="EPC.cs" />
     <Compile Include="EProducto.cs" />
