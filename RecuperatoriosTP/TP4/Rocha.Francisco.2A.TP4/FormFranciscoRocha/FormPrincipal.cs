@@ -181,15 +181,9 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void CargarSQL_Click(object sender, EventArgs e)
         {
-            try
-            {
-                this.CargarDesdeSQL();
-                this.ActualizarCantidadSQL();
-            }
-            catch (Exception ex)
-            {
-                Archivos<Producto>.LogErrores(ex.ToString());
-            }
+            MessageBox.Show("Se estan cargando los datos desde el SQL al Almacen");
+            Thread threadSql = new Thread(HiloCargarSQL);
+            threadSql.Start();
         }
 
         /// <summary>
@@ -551,7 +545,7 @@ namespace FormFranciscoRocha
                     }
                 }
             }
-            catch(ConexionSQLException ex)
+            catch (ConexionSQLException ex)
             {
                 MessageBox.Show(ex.InformarExcepcionSQL() + " pero se guardaro el producto fabricado en el almacen");
             }
@@ -685,8 +679,21 @@ namespace FormFranciscoRocha
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Se encontraron datos repetidos en el XML y SQL");
+                MessageBox.Show("Error al conectarse con la base de datos...");
                 Archivos<Producto>.LogErrores(ex.ToString());
+            }
+        }
+
+        private void HiloCargarSQL()
+        {
+            try
+            {
+                this.CargarDesdeSQL();
+                this.ActualizarCantidadSQL();
+            }
+            catch (ConexionSQLException ex)
+            {
+                Archivos<Producto>.LogErrores(ex.InformarExcepcionSQL());
             }
         }
 
@@ -737,7 +744,7 @@ namespace FormFranciscoRocha
                 this.miAlmacen = PC.ObtenerListaPcSql(this.miAlmacen);
                 this.miAlmacen = Celular.ObtenerListaCelularSql(this.miAlmacen);
 
-                if(this.miAlmacen.CantidadGenerica > aux)
+                if (this.miAlmacen.CantidadGenerica > aux)
                 {
                     MessageBox.Show("Se cargaron los datos del SQL correctamente", "Carga satisfactoria");
                 }
