@@ -3,7 +3,7 @@ using System;
 
 namespace FormFranciscoRocha
 {
-    partial class FormPrincipal
+    partial class FormFranciscoRocha
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -159,9 +159,9 @@ namespace FormFranciscoRocha
             this.buttonMinimizar.Size = new System.Drawing.Size(61, 29);
             this.buttonMinimizar.TabIndex = 13;
             this.buttonMinimizar.UseVisualStyleBackColor = false;
-            this.buttonMinimizar.Click += new System.EventHandler(this.buttonMinimizar_Click);
-            this.buttonMinimizar.MouseEnter += new System.EventHandler(this.buttonMinimizar_MouseEnter);
-            this.buttonMinimizar.MouseLeave += new System.EventHandler(this.buttonMinimizar_MouseLeave);
+            this.buttonMinimizar.Click += new System.EventHandler(this.ButtonMinimizar_Click);
+            this.buttonMinimizar.MouseEnter += new System.EventHandler(this.ButtonMinimizar_MouseEnter);
+            this.buttonMinimizar.MouseLeave += new System.EventHandler(this.ButtonMinimizar_MouseLeave);
             // 
             // PanelMovimientoForm
             // 
@@ -204,9 +204,9 @@ namespace FormFranciscoRocha
             this.buttonEliminar.Size = new System.Drawing.Size(236, 73);
             this.buttonEliminar.TabIndex = 17;
             this.buttonEliminar.UseVisualStyleBackColor = false;
-            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
-            this.buttonEliminar.MouseEnter += new System.EventHandler(this.buttonEliminar_MouseEnter);
-            this.buttonEliminar.MouseLeave += new System.EventHandler(this.buttonEliminar_MouseLeave);
+            this.buttonEliminar.Click += new System.EventHandler(this.ButtonEliminar_Click);
+            this.buttonEliminar.MouseEnter += new System.EventHandler(this.ButtonEliminar_MouseEnter);
+            this.buttonEliminar.MouseLeave += new System.EventHandler(this.ButtonEliminar_MouseLeave);
             // 
             // buttonXMLaSQL
             // 
@@ -221,11 +221,11 @@ namespace FormFranciscoRocha
             this.buttonXMLaSQL.Size = new System.Drawing.Size(236, 73);
             this.buttonXMLaSQL.TabIndex = 18;
             this.buttonXMLaSQL.UseVisualStyleBackColor = false;
-            this.buttonXMLaSQL.Click += new System.EventHandler(this.buttonXMLaSQL_Click);
-            this.buttonXMLaSQL.MouseEnter += new System.EventHandler(this.buttonXMLaSQL_MouseEnter);
-            this.buttonXMLaSQL.MouseLeave += new System.EventHandler(this.buttonXMLaSQL_MouseLeave);
+            this.buttonXMLaSQL.Click += new System.EventHandler(this.ButtonXMLaSQL_Click);
+            this.buttonXMLaSQL.MouseEnter += new System.EventHandler(this.ButtonXMLaSQL_MouseEnter);
+            this.buttonXMLaSQL.MouseLeave += new System.EventHandler(this.ButtonXMLaSQL_MouseLeave);
             // 
-            // FormPrincipal
+            // FormFranciscoRocha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -243,8 +243,8 @@ namespace FormFranciscoRocha
             this.Controls.Add(this.ButtonFabricarPC);
             this.Controls.Add(this.ButtonCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormPrincipal";
-            this.Text = "|";
+            this.Name = "FormFranciscoRocha";
+            this.Text = "FormFranciscoROhca";
             this.ResumeLayout(false);
 
         }

@@ -31,7 +31,7 @@ namespace Entidades
         /// </summary>
         /// <param name="PC">PC a ser ingresado a la base de datos</param>
         /// <returns>Retorna un booleano indicando si se singreso correctamente o no</returns>
-        public bool InsertarPC(FabricaPC PC)
+        public bool InsertarPcSql(FabricaPC PC)
         {
             bool retorno;
 
@@ -50,29 +50,32 @@ namespace Entidades
 
             try
             {
-                this.comando = new SqlCommand();
+                if (ExisteProductoEnElSqlPC(PC) == -1)
+                {
+                    this.comando = new SqlCommand();
 
-                this.comando.CommandType = CommandType.Text;
+                    this.comando.CommandType = CommandType.Text;
 
-                this.comando.Connection = this.conexion;
+                    this.comando.Connection = this.conexion;
 
-                this.comando.Parameters.AddWithValue("@GPU", gpu);
-                this.comando.Parameters.AddWithValue("@Marca", marca);
-                this.comando.Parameters.AddWithValue("@Fuente", fuente);
-                this.comando.Parameters.AddWithValue("@Ram", memoriaRam);
-                this.comando.Parameters.AddWithValue("@Procesador", cpu);
-                this.comando.Parameters.AddWithValue("@Gabinete", gabinete);
-                this.comando.Parameters.AddWithValue("@LectorCD", PC.LECTOR_CD);
-                this.comando.Parameters.AddWithValue("@Motherboard", placamadre);
-                this.comando.Parameters.AddWithValue("@UPC", PC.CODIGO_DE_BARRAS);
-                this.comando.Parameters.AddWithValue("@Almacenamiento", almacenamiento);
-                this.comando.Parameters.AddWithValue("@SistemaOperativo", sistemaOperativo);
+                    this.comando.Parameters.AddWithValue("@GPU", gpu);
+                    this.comando.Parameters.AddWithValue("@Marca", marca);
+                    this.comando.Parameters.AddWithValue("@Fuente", fuente);
+                    this.comando.Parameters.AddWithValue("@Ram", memoriaRam);
+                    this.comando.Parameters.AddWithValue("@Procesador", cpu);
+                    this.comando.Parameters.AddWithValue("@Gabinete", gabinete);
+                    this.comando.Parameters.AddWithValue("@LectorCD", PC.LECTOR_CD);
+                    this.comando.Parameters.AddWithValue("@Motherboard", placamadre);
+                    this.comando.Parameters.AddWithValue("@UPC", PC.CODIGO_DE_BARRAS);
+                    this.comando.Parameters.AddWithValue("@Almacenamiento", almacenamiento);
+                    this.comando.Parameters.AddWithValue("@SistemaOperativo", sistemaOperativo);
 
-                this.comando.CommandText = sql;
+                    this.comando.CommandText = sql;
 
-                this.conexion.Open();
+                    this.conexion.Open();
 
-                this.comando.ExecuteNonQuery();
+                    this.comando.ExecuteNonQuery();
+                }
 
                 retorno = true;
             }
@@ -80,7 +83,6 @@ namespace Entidades
             {
                 Archivos<Producto>.LogErrores(ex.ToString());
                 retorno = false;
-                throw new ConexionSQLException();
             }
             finally
             {
@@ -98,7 +100,7 @@ namespace Entidades
         /// </summary>
         /// <param name="UPC">Codigo de barras del producto a ser eliminado</param>
         /// <returns>Retorna un booleano indicando si se borro correctamente o no la PC de la base de datos</returns>
-        public bool BorrarPC(int UPC)
+        public bool BorrarPcSql(int UPC)
         {
             bool retorno;
             int validacion;
@@ -151,7 +153,7 @@ namespace Entidades
         /// </summary>
         /// <param name="Almacen">Almacen al que se le van a insertar las PCs</param>
         /// <returns>Retorna el almacen con los datos actualizados</returns>
-        public AlmacenProdutosFabricados<Producto> ObtenerListaDato(AlmacenProdutosFabricados<Producto> Almacen)
+        public AlmacenProdutosFabricados<Producto> ObtenerListaPcSql(AlmacenProdutosFabricados<Producto> Almacen)
         { 
             try
             {
@@ -167,9 +169,9 @@ namespace Entidades
 
                 while (lector.Read())
                 {
-                    int UPC = (int)lector["UPC"];
+                    int upc = (int)lector["UPC"];
                     
-                    GPU GPU = (GPU)Enum.Parse(typeof(GPU), (string)lector["GPU"]);
+                    GPU gpu = (GPU)Enum.Parse(typeof(GPU), (string)lector["GPU"]);
                     RAM ram = (RAM)Enum.Parse(typeof(RAM), (string)lector["Ram"]);
                     Fuente fuente = (Fuente)Enum.Parse(typeof(Fuente), (string)lector["Fuente"]);
                     MarcaCPU marca = (MarcaCPU)Enum.Parse(typeof(MarcaCPU), (string)lector["Marca"]);
@@ -180,7 +182,7 @@ namespace Entidades
                     Almacenamiento almacenamiento = (Almacenamiento)Enum.Parse(typeof(Almacenamiento), (string)lector["Almacenamiento"]);
                     int lectorCD = (int)lector["LectorCD"];
 
-                    FabricaPC pc = new FabricaPC(marca, procesador, motherboard, GPU, ram, fuente, gabinete, sistemaOperativo, almacenamiento, this.BoolSelec(lectorCD), UPC);
+                    FabricaPC pc = new FabricaPC(marca, procesador, motherboard, gpu, ram, fuente, gabinete, sistemaOperativo, almacenamiento, this.EnteroABooleano(lectorCD), upc);
 
                     Almacen += pc;
                 }
@@ -209,6 +211,18 @@ namespace Entidades
             return Almacen;
         }
 
+        private int ExisteProductoEnElSqlPC(FabricaPC PC)
+        {
+            int aux;
+
+            AlmacenProdutosFabricados<Producto> AlmacenValidacion = new AlmacenProdutosFabricados<Producto>("AlmacenPruebaPc");
+
+            AlmacenValidacion = this.ObtenerListaPcSql(AlmacenValidacion);
+
+            aux = AlmacenValidacion | PC;
+
+            return aux;
+        }
         #endregion
     }
 }

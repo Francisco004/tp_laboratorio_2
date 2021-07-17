@@ -42,7 +42,7 @@ namespace Entidades
         /// Metodo que se encarga de guardar el almacen de productos fabricados en un XML
         /// </summary>
         /// <param name="Datos">Almacen a ser serializado</param>
-        public static void GuardarFabrica(AlmacenProdutosFabricados<T> Datos)
+        public static void GuardarFabricaEnXml(AlmacenProdutosFabricados<T> Datos)
         {
             try
             {
@@ -64,7 +64,7 @@ namespace Entidades
         /// </summary>
         /// <param name="Datos">Almacen a ser cargado con los datos</param>
         /// <returns>Retorna el almacen con los productos fabricados</returns>
-        public static AlmacenProdutosFabricados<T> CargarFabrica(AlmacenProdutosFabricados<T> Datos)
+        public static AlmacenProdutosFabricados<T> CargarFabricaDelXml(AlmacenProdutosFabricados<T> Datos)
         {
             try
             {

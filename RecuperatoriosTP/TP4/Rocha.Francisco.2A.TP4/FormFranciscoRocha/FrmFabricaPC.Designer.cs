@@ -77,7 +77,7 @@ namespace FormFranciscoRocha
             this.comboBoxMother.Name = "comboBoxMother";
             this.comboBoxMother.Size = new System.Drawing.Size(252, 21);
             this.comboBoxMother.TabIndex = 19;
-            this.comboBoxMother.SelectedIndexChanged += new System.EventHandler(this.comboBoxMother_SelectedIndexChanged);
+            this.comboBoxMother.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMother_SelectedIndexChanged);
             // 
             // comboBoxLector
             // 

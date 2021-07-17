@@ -74,7 +74,7 @@ namespace FormFranciscoRocha
             this.comboBoxMaterial.Name = "comboBoxMaterial";
             this.comboBoxMaterial.Size = new System.Drawing.Size(181, 21);
             this.comboBoxMaterial.TabIndex = 8;
-            this.comboBoxMaterial.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaterial_SelectedIndexChanged);
+            this.comboBoxMaterial.SelectedIndexChanged += new System.EventHandler(this.ComboBoxMaterial_SelectedIndexChanged);
             // 
             // comboBoxBateria
             // 

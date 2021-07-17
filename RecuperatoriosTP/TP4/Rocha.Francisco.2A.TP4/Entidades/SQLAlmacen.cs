@@ -31,9 +31,9 @@ namespace Entidades
         /// Metodo que inserta un Almacen en la base de datos si no existe un Almacen con el mismo nombre
         /// </summary>
         /// <param name="Almacen">Almacen a ser ingresado a la base de datos</param>
-        public void InsertarAlmacen(AlmacenProdutosFabricados<Producto> Almacen)
+        public void InsertarAlmacenAlSql(AlmacenProdutosFabricados<Producto> Almacen)
         {
-            if(ExisteAlmacen(Almacen) == false)
+            if(ExisteAlmacenEnSql(Almacen) == false)
             {
                 string sql = "INSERT INTO Table_Almacen (NombreDelAlamcen, CantidadDeProductos) ";
                 sql += "VALUES (@NombreDelAlamcen, @CantidadDeProductos)";
@@ -73,7 +73,7 @@ namespace Entidades
         /// Modifica la cantidad de productos del Almacen en la base de datos
         /// </summary>
         /// <param name="Almacen">Almacen a ser modificado a la base de datos</param>
-        public void ModificarCantidad(AlmacenProdutosFabricados<Producto> Almacen)
+        public void ModificarCantidadAlmacenDelSql(AlmacenProdutosFabricados<Producto> Almacen)
         {
             try
             {
@@ -113,7 +113,7 @@ namespace Entidades
         /// </summary>
         /// <param name="Almacen">Almacen a ser verificado</param>
         /// <returns>Retorna false si no se encuentra el Almacen en la base de datos, caso contrario retorna true</returns>
-        public bool ExisteAlmacen(AlmacenProdutosFabricados<Producto> Almacen)
+        public bool ExisteAlmacenEnSql(AlmacenProdutosFabricados<Producto> Almacen)
         {
             string nombreAlmacen;
             bool retorno = false;

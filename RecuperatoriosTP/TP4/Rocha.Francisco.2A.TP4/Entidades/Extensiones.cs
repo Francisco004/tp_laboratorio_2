@@ -15,7 +15,7 @@ namespace Entidades
         /// /// <param name="extension">Extension de la clase IProducto</param>
         /// <param name="arreglar">String a ser arreglado por el metodo</param>
         /// <returns>Retorna el string ingresado pero sin guines bajos</returns>
-        public static string Fix(this IProductos extension, string arreglar)
+        public static string RemoverGuionBajo(this IProductos extension, string arreglar)
         {
             StringBuilder correcion = new StringBuilder(arreglar);
 
@@ -47,7 +47,7 @@ namespace Entidades
         /// <param name="extension">Extension de la clase IProducto</param>
         /// <param name="tiene">Booleano a ser convertido a string</param>
         /// <returns>Retorna Tiene si el booleano ingresado es true, caso contrario No tiene</returns>
-        public static string BoolFix(this IProductos extension, bool tiene)
+        public static string BooleanoAString(this IProductos extension, bool tiene)
         {
             string retorno = "No tiene";
 
@@ -65,7 +65,7 @@ namespace Entidades
         /// /// /// <param name="extension">Extension de la clase ISQL</param>
         /// <param name="index">Entero a ser convertido a booleano</param>
         /// <returns>Retorna true si el entero ingresado es 0, caso contrario false</returns>
-        public static bool BoolSelec(this ISQL extension, int index)
+        public static bool EnteroABooleano(this ISQL extension, int index)
         {
             bool retorno;
 

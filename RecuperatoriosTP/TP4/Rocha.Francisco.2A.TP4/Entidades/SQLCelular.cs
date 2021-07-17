@@ -31,7 +31,7 @@ namespace Entidades
         /// </summary>
         /// <param name="Celular">Celular a ser ingresado a la base de datos</param>
         /// <returns>Retorna un booleano indicando si se singreso correctamente o no</returns>
-        public bool InsertarCelular(FabricaCelular Celular)
+        public bool InsertarCelularSql(FabricaCelular Celular)
         {
             bool retorno;
             
@@ -51,31 +51,34 @@ namespace Entidades
 
             try
             {
-                this.comando = new SqlCommand();
+                if (ExisteProductoEnElSqlCelular(Celular) == -1)
+                {
+                    this.comando = new SqlCommand();
 
-                this.comando.CommandType = CommandType.Text;
+                    this.comando.CommandType = CommandType.Text;
 
-                this.comando.Connection = this.conexion;
-                
-                this.comando.Parameters.AddWithValue("@GPU", gpu);
-                this.comando.Parameters.AddWithValue("@Ram", ram);
-                this.comando.Parameters.AddWithValue("@Marca", marca);
-                this.comando.Parameters.AddWithValue("@Camara", camara);
-                this.comando.Parameters.AddWithValue("@Bateria", bateria);
-                this.comando.Parameters.AddWithValue("@Material", material);
-                this.comando.Parameters.AddWithValue("@Pulgadas", pulgadas);
-                this.comando.Parameters.AddWithValue("@Jack", Celular.JACK);
-                this.comando.Parameters.AddWithValue("@Huella", Celular.HUELLA);
-                this.comando.Parameters.AddWithValue("@UPC", Celular.CODIGO_DE_BARRAS);
-                this.comando.Parameters.AddWithValue("@Resolucion", resolucion);
-                this.comando.Parameters.AddWithValue("@Almacenamiento", almacenamiento);
-                this.comando.Parameters.AddWithValue("@SistemaOperativo", sistemaOperativo);
+                    this.comando.Connection = this.conexion;
 
-                this.comando.CommandText = sql;
+                    this.comando.Parameters.AddWithValue("@GPU", gpu);
+                    this.comando.Parameters.AddWithValue("@Ram", ram);
+                    this.comando.Parameters.AddWithValue("@Marca", marca);
+                    this.comando.Parameters.AddWithValue("@Camara", camara);
+                    this.comando.Parameters.AddWithValue("@Bateria", bateria);
+                    this.comando.Parameters.AddWithValue("@Material", material);
+                    this.comando.Parameters.AddWithValue("@Pulgadas", pulgadas);
+                    this.comando.Parameters.AddWithValue("@Jack", Celular.JACK);
+                    this.comando.Parameters.AddWithValue("@Huella", Celular.HUELLA);
+                    this.comando.Parameters.AddWithValue("@UPC", Celular.CODIGO_DE_BARRAS);
+                    this.comando.Parameters.AddWithValue("@Resolucion", resolucion);
+                    this.comando.Parameters.AddWithValue("@Almacenamiento", almacenamiento);
+                    this.comando.Parameters.AddWithValue("@SistemaOperativo", sistemaOperativo);
 
-                this.conexion.Open();
+                    this.comando.CommandText = sql;
 
-                this.comando.ExecuteNonQuery();
+                    this.conexion.Open();
+
+                    this.comando.ExecuteNonQuery();
+                }
 
                 retorno = true;
             }
@@ -101,7 +104,7 @@ namespace Entidades
         /// </summary>
         /// <param name="UPC">Codigo de barras del producto a ser eliminado</param>
         /// <returns>Retorna un booleano indicando si se borro correctamente o no el celular de la base de datos</returns>
-        public bool BorrarCelular(int UPC)
+        public bool BorrarCelularSql(int UPC)
         {
             bool retorno;
             int validacion;
@@ -156,7 +159,7 @@ namespace Entidades
         /// </summary>
         /// <param name="Almacen">Almacen al que se le van a insertar los celulares</param>
         /// <returns>Retorna el almacen con los datos actualizados</returns>
-        public AlmacenProdutosFabricados<Producto> ObtenerListaDato(AlmacenProdutosFabricados<Producto> Almacen)
+        public AlmacenProdutosFabricados<Producto> ObtenerListaCelularSql(AlmacenProdutosFabricados<Producto> Almacen)
         {
             try
             {
@@ -172,10 +175,10 @@ namespace Entidades
 
                 while (lector.Read())
                 {
-                    int UPC = (int)lector["UPC"];
+                    int upc = (int)lector["UPC"];
 
                     
-                    GPU GPU = (GPU)Enum.Parse(typeof(GPU), (string)lector["GPU"]);
+                    GPU gpu = (GPU)Enum.Parse(typeof(GPU), (string)lector["GPU"]);
                     RAM ram = (RAM)Enum.Parse(typeof(RAM), (string)lector["Ram"]);
                     Camara camara = (Camara)Enum.Parse(typeof(Camara), (string)lector["Camara"]);
                     MarcaCPU marca = (MarcaCPU)Enum.Parse(typeof(MarcaCPU), (string)lector["Marca"]);
@@ -189,7 +192,7 @@ namespace Entidades
                     int Jack = (int)lector["Jack"];
                     int Huella = (int)lector["Huella"];
 
-                    FabricaCelular Celular = new FabricaCelular(marca, GPU, ram, sistemaOperativo, almacenamiento, UPC, camara, bateria, carcasa, pulgadas, resolucion, this.BoolSelec(Jack), this.BoolSelec(Huella));
+                    FabricaCelular Celular = new FabricaCelular(marca, gpu, ram, sistemaOperativo, almacenamiento, upc, camara, bateria, carcasa, pulgadas, resolucion, this.EnteroABooleano(Jack), this.EnteroABooleano(Huella));
 
                     Almacen += Celular;
                 }
@@ -218,6 +221,23 @@ namespace Entidades
             return Almacen;
         }
 
+        /// <summary>
+        /// Metodo que se encarga de buscar si existe el producto en el SQL, si no existe retorna -1 y significa que se podra insertar en el SQL
+        /// </summary>
+        /// <param name="Celular">Celular a comprobar si existe</param>
+        /// <returns>-1 si no se encuentra en el almacen</returns>
+        private int ExisteProductoEnElSqlCelular(FabricaCelular Celular)
+        {
+            int aux;
+
+            AlmacenProdutosFabricados<Producto> AlmacenValidacion = new AlmacenProdutosFabricados<Producto>("AlmacenPruebaCelular");
+
+            AlmacenValidacion = this.ObtenerListaCelularSql(AlmacenValidacion);
+
+            aux = AlmacenValidacion | Celular;
+
+            return aux;
+        }
         #endregion
     }
 }

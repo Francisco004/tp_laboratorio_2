@@ -19,10 +19,10 @@ namespace FormFranciscoRocha
             set { UPC = value; }
         }
 
-        public FormPrincipal PropiedadAlmacen;
+        public FormFranciscoRocha PropiedadAlmacen;
         #endregion
 
-        public FrmEliminar(FormPrincipal ProductosFabricados)
+        public FrmEliminar(FormFranciscoRocha ProductosFabricados)
         {
             InitializeComponent();
 
@@ -64,7 +64,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonEliminar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonEliminar.BackgroundImage = FormFranciscoRocha.Properties.Resources.Screenshot_21;
+            this.ButtonEliminar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Screenshot_21;
         }
 
         /// <summary>

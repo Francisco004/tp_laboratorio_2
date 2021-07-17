@@ -192,8 +192,8 @@ namespace Entidades
             try
             {
                 string infoCelular = String.Format(" \n Camara: {0} \n Bateria: {1} \n Carcasa: {2} \n Pulgadas: {3} \n Resolucion: {4} \n Jack: {5} \n Huella dactilar: " +
-                                    "{6}\n-----------------------------------------------------------------------------\n\n", this.Fix(CAMARA.ToString()), this.Fix(BATERIA.ToString()),
-                                                                              CARCASA, this.Fix(PULGADAS.ToString()), this.Fix(RESOLUCION.ToString()), this.BoolFix(JACK), this.BoolFix(HUELLA));
+                                    "{6}\n-----------------------------------------------------------------------------\n\n", this.RemoverGuionBajo(CAMARA.ToString()), this.RemoverGuionBajo(BATERIA.ToString()),
+                                                                              CARCASA, this.RemoverGuionBajo(PULGADAS.ToString()), this.RemoverGuionBajo(RESOLUCION.ToString()), this.BooleanoAString(JACK), this.BooleanoAString(HUELLA));
                 if (NoMostrar())
                 {
                     sb.AppendLine("El celular ingresado no tiene componentes compatibles...");

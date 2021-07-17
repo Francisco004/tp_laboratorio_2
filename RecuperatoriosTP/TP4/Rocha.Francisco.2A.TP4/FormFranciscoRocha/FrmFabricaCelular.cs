@@ -10,8 +10,8 @@ namespace FormFranciscoRocha
     {
         #region Atributos 
 
-        private bool Arrastrar;
-        private Point PuntoInicio = new Point(0, 0);
+        private bool arrastrar;
+        private Point puntoInicio = new Point(0, 0);
         private FabricaCelular Celular;
         #endregion
 
@@ -76,7 +76,7 @@ namespace FormFranciscoRocha
         #region Eventos
         private void ButtonCerrar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonCerrar.BackgroundImage = FormFranciscoRocha.Properties.Resources.Screenshot_13;
+            this.ButtonCerrar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Screenshot_13;
         }
 
         private void ButtonCerrar_MouseLeave(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace FormFranciscoRocha
 
         private void ButtonFabricar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonFabricar.BackgroundImage = FormFranciscoRocha.Properties.Resources.Screenshot_12;
+            this.ButtonFabricar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Screenshot_12;
         }
 
         private void ButtonFabricar_MouseLeave(object sender, EventArgs e)
@@ -144,7 +144,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void comboBoxMaterial_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxMaterial_SelectedIndexChanged(object sender, EventArgs e)
         {
             MessageBox.Show("Se utilizara " + this.comboBoxMaterial.Text + " como material de carcasa");
         }
@@ -172,7 +172,7 @@ namespace FormFranciscoRocha
                 Almacenamiento EAlmacenamiento = (Almacenamiento)Enum.Parse(typeof(Almacenamiento), ComboboxToStringOriginal(4));
                 MaterialCarcasa EMaterial = (MaterialCarcasa)Enum.Parse(typeof(MaterialCarcasa), ComboboxToStringOriginal(10));
 
-                this.Celular = new FabricaCelular(EMarca, EGpu, ERam, ESistemaOp, EAlmacenamiento, UPC, ECamara, EBateria, EMaterial, EPulgadas, EResolucion, BoolSelec(this.comboBoxJack.SelectedIndex), BoolSelec(this.comboBoxHuella.SelectedIndex));
+                this.Celular = new FabricaCelular(EMarca, EGpu, ERam, ESistemaOp, EAlmacenamiento, UPC, ECamara, EBateria, EMaterial, EPulgadas, EResolucion, EnteroABooleano(this.comboBoxJack.SelectedIndex), EnteroABooleano(this.comboBoxHuella.SelectedIndex));
 
             }
             catch (Exception ex)
@@ -268,7 +268,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        protected override bool BoolSelec(int index)
+        protected override bool EnteroABooleano(int index)
         {
             bool retorno;
 
@@ -371,22 +371,22 @@ namespace FormFranciscoRocha
         /// </summary>
         private void MovimientoForm_MouseDown(object sender, MouseEventArgs e)
         {
-            Arrastrar = true;
-            PuntoInicio = new Point(e.X, e.Y);
+            arrastrar = true;
+            puntoInicio = new Point(e.X, e.Y);
         }
 
         private void MovimientoForm_MouseMove(object sender, MouseEventArgs e)
         {
-            if (Arrastrar)
+            if (arrastrar)
             {
                 Point p = PointToScreen(e.Location);
-                this.Location = new Point(p.X - PuntoInicio.X, p.Y - PuntoInicio.Y);
+                this.Location = new Point(p.X - puntoInicio.X, p.Y - puntoInicio.Y);
             }
         }
 
         private void MovimientoForm_MouseUp(object sender, MouseEventArgs e)
         {
-            Arrastrar = false;
+            arrastrar = false;
         }
         #endregion
     }

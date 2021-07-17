@@ -8,10 +8,10 @@ namespace FormFranciscoRocha
     {
         #region Atributo
 
-        protected FormPrincipal PropiedadAlmacen;
+        protected FormFranciscoRocha PropiedadAlmacen;
         #endregion
 
-        public FrnMostrarProductosFabricados(FormPrincipal ProductosFabricados)
+        public FrnMostrarProductosFabricados(FormFranciscoRocha ProductosFabricados)
         {
             InitializeComponent();
             PropiedadAlmacen = ProductosFabricados;

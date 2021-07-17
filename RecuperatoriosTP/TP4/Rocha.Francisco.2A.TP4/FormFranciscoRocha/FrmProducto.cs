@@ -28,7 +28,7 @@ namespace FormFranciscoRocha
         }
 
 
-        protected virtual bool BoolSelec(int index)
+        protected virtual bool EnteroABooleano(int index)
         {
             return false;
         }

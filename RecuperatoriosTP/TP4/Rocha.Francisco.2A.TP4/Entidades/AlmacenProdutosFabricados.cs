@@ -84,7 +84,7 @@ namespace Entidades
         /// Constructor al que se le pasa el nombre por parametro
         /// </summary>
         /// <param name="nombre">Nombre del almacen</param>
-        private AlmacenProdutosFabricados(string nombre) : this()
+        public AlmacenProdutosFabricados(string nombre) : this()
         {
             try
             {

@@ -7,7 +7,7 @@ namespace Entidades
     public class FabricaPC : Producto
     {
         #region Atributos
-        protected bool LectorCD;
+        protected bool lectorCd;
         protected Gabinete gabinete;
         protected Fuente fuenteDePoder;
         protected Motherboard placaMadre;
@@ -58,7 +58,7 @@ namespace Entidades
         /// <summary>
         /// Propiedad bool LECTOR_CD que retorna un booleano indicando si tiene o no y setea un booleano indicando si tiene o no
         /// </summary>
-        public bool LECTOR_CD { get => LectorCD; set => LectorCD = value; }
+        public bool LECTOR_CD { get => lectorCd; set => lectorCd = value; }
 
         #region Propiedades override
 
@@ -199,8 +199,8 @@ namespace Entidades
                 else
                 {
                     string infoPc = String.Format(" \n Procesador: {0} \n Motherboard: {1} \n Gabinete: {2} \n Fuente {3} \n Lector CD: {4}" +
-                         "\n----------------------------------------------------------------------------\n\n", this.Fix(PROCESADOR.ToString()),
-                                        this.Fix(PLACA_MADRE.ToString()), this.Fix(GABINETE.ToString()), this.Fix(FUENTE.ToString()), this.BoolFix(LECTOR_CD));
+                         "\n----------------------------------------------------------------------------\n\n", this.RemoverGuionBajo(PROCESADOR.ToString()),
+                                        this.RemoverGuionBajo(PLACA_MADRE.ToString()), this.RemoverGuionBajo(GABINETE.ToString()), this.RemoverGuionBajo(FUENTE.ToString()), this.BooleanoAString(LECTOR_CD));
                     sb.AppendLine("------------------------------------ PC ------------------------------------");
                     sb.Append(base.Informacion());
                     sb.Append(infoPc);

@@ -10,8 +10,8 @@ namespace FormFranciscoRocha
     {
         #region Atributos
         private FabricaPC PC;
-        private bool Arrastrar;
-        private Point PuntoInicio = new Point(0, 0);
+        private bool arrastrar;
+        private Point puntoInicio = new Point(0, 0);
         #endregion
 
         #region Propiedad
@@ -74,7 +74,7 @@ namespace FormFranciscoRocha
         #region Eventos
         private void ButtonCerrar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonCerrar.BackgroundImage = FormFranciscoRocha.Properties.Resources.Screenshot_13;
+            this.ButtonCerrar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Screenshot_13;
         }
 
         private void ButtonCerrar_MouseLeave(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace FormFranciscoRocha
 
         private void ButtonFabricar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonFabricar.BackgroundImage = FormFranciscoRocha.Properties.Resources.Screenshot_12;
+            this.ButtonFabricar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Screenshot_12;
         }
 
         private void ButtonFabricar_MouseLeave(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void comboBoxMother_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBoxMother_SelectedIndexChanged(object sender, EventArgs e)
         {
             MessageBox.Show("Se ha ensamblado el procesador en la motherboard");
         }
@@ -150,7 +150,7 @@ namespace FormFranciscoRocha
                 Procesador EProcesador = (Procesador)Enum.Parse(typeof(Procesador), ComboboxToStringOriginal(6));
                 Almacenamiento EAlmacenamiento = (Almacenamiento)Enum.Parse(typeof(Almacenamiento), ComboboxToStringOriginal(4));
 
-                this.PC = new FabricaPC(EMarca, EProcesador, EMother, EGpu, ERam, EFuente, EGabinete, ESistemaOp, EAlmacenamiento, BoolSelec(comboBoxLector.SelectedIndex), UPC);
+                this.PC = new FabricaPC(EMarca, EProcesador, EMother, EGpu, ERam, EFuente, EGabinete, ESistemaOp, EAlmacenamiento, EnteroABooleano(comboBoxLector.SelectedIndex), UPC);
             }
             catch (Exception ex)
             {
@@ -164,7 +164,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        protected override bool BoolSelec(int index)
+        protected override bool EnteroABooleano(int index)
         {
             bool retorno;
 
@@ -476,22 +476,22 @@ namespace FormFranciscoRocha
         /// </summary>
         private void MovimientoForm_MouseDown(object sender, MouseEventArgs e)
         {
-            Arrastrar = true;
-            PuntoInicio = new Point(e.X, e.Y);
+            arrastrar = true;
+            puntoInicio = new Point(e.X, e.Y);
         }
 
         private void MovimientoForm_MouseMove(object sender, MouseEventArgs e)
         {
-            if (Arrastrar)
+            if (arrastrar)
             {
                 Point p = PointToScreen(e.Location);
-                this.Location = new Point(p.X - PuntoInicio.X, p.Y - PuntoInicio.Y);
+                this.Location = new Point(p.X - puntoInicio.X, p.Y - puntoInicio.Y);
             }
         }
 
         private void MovimientoForm_MouseUp(object sender, MouseEventArgs e)
         {
-            Arrastrar = false;
+            arrastrar = false;
         }
         #endregion
     }

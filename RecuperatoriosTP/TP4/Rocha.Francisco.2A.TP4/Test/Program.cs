@@ -67,7 +67,7 @@ namespace Test
             Console.WriteLine(AlmacenFabrica.ToString());
 
             ////Guardo los datos del almacen en un xml que se encuentra en el path de la linea 20
-            Archivos<Producto>.GuardarFabrica(AlmacenFabrica);
+            Archivos<Producto>.GuardarFabricaEnXml(AlmacenFabrica);
 
 
 
@@ -93,7 +93,7 @@ namespace Test
             AlmacenCopiado.Directorio = AppDomain.CurrentDomain.BaseDirectory + "ProductosFabricadosEnConsola.xml";
 
             //Cargo los datos de Almacen a AlmacenCopiado
-            AlmacenCopiado = Archivos<Producto>.CargarFabrica(AlmacenCopiado);
+            AlmacenCopiado = Archivos<Producto>.CargarFabricaDelXml(AlmacenCopiado);
 
             ////Muestro el Almacen Copiado
             Console.WriteLine(AlmacenCopiado.ToString());
@@ -134,7 +134,7 @@ namespace Test
             Console.WriteLine("Ingreso una PC a Tabla_PC en el SQL");
             try
             {
-                SQLPC.InsertarPC(PC1);
+                SQLPC.InsertarPcSql(PC1);
             }
             catch (ConexionSQLException ex)
             {
@@ -153,7 +153,7 @@ namespace Test
             AlmacenSQL = "Productos del SQL";
             try
             {
-                AlmacenSQL = SQLPC.ObtenerListaDato(AlmacenSQL);
+                AlmacenSQL = SQLPC.ObtenerListaPcSql(AlmacenSQL);
             }
             catch (ConexionSQLException ex)
             {
@@ -171,7 +171,7 @@ namespace Test
             Console.WriteLine("Borro la PC cargada de la Tabla_PC");
             try
             {
-                SQLPC.BorrarPC(PC1.CODIGO_DE_BARRAS);
+                SQLPC.BorrarPcSql(PC1.CODIGO_DE_BARRAS);
             }
             catch (ConexionSQLException ex)
             {
@@ -188,7 +188,7 @@ namespace Test
             Console.WriteLine("Ingreso un Celular a Tabla_Celular en el SQL");
             try
             {
-                SQLCelular.InsertarCelular(Celular1);
+                SQLCelular.InsertarCelularSql(Celular1);
             }
             catch (ConexionSQLException ex)
             {
@@ -205,7 +205,7 @@ namespace Test
             Console.WriteLine("Cargo los Celulares que guarde en el SQL al almacen");
             try
             {
-                AlmacenSQL = SQLCelular.ObtenerListaDato(AlmacenSQL);
+                AlmacenSQL = SQLCelular.ObtenerListaCelularSql(AlmacenSQL);
             }
             catch (ConexionSQLException ex)
             {
@@ -223,7 +223,7 @@ namespace Test
             Console.WriteLine("Borro el Celular cargado de la Tabla_Celular en el SQL");
             try
             {
-                SQLCelular.BorrarCelular(Celular1.CODIGO_DE_BARRAS);
+                SQLCelular.BorrarCelularSql(Celular1.CODIGO_DE_BARRAS);
             }
             catch (ConexionSQLException ex)
             {
@@ -240,7 +240,7 @@ namespace Test
             Console.WriteLine("Inserto un Almacen en Table_Almacen en el SQL");
             try
             {
-                SQLAlmacen.InsertarAlmacen(AlmacenSQL);
+                SQLAlmacen.InsertarAlmacenAlSql(AlmacenSQL);
             }
             catch (ConexionSQLException ex)
             {
@@ -258,7 +258,7 @@ namespace Test
             AlmacenSQL += PC7;
             try
             {
-                SQLAlmacen.ModificarCantidad(AlmacenSQL);
+                SQLAlmacen.ModificarCantidadAlmacenDelSql(AlmacenSQL);
             }
             catch (ConexionSQLException ex)
             {

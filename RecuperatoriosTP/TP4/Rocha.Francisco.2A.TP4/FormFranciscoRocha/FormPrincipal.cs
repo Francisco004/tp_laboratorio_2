@@ -9,7 +9,7 @@ namespace FormFranciscoRocha
 {
     public delegate void Callback();
 
-    public partial class FormPrincipal : Form
+    public partial class FormFranciscoRocha : Form
     {
         public event Callback RefreshMostrar;
 
@@ -17,8 +17,8 @@ namespace FormFranciscoRocha
 
         Thread mostrar;
         Thread eliminar;
-        private bool Arrastrar;
-        private Point PuntoInicio = new Point(0, 0);
+        private bool arrastrar;
+        private Point puntoInicio = new Point(0, 0);
         protected AlmacenProdutosFabricados<Producto> miAlmacen;
         #endregion
 
@@ -30,7 +30,7 @@ namespace FormFranciscoRocha
         public AlmacenProdutosFabricados<Producto> Almacen { get { return this.miAlmacen; } set { this.miAlmacen = value; } }
         #endregion
 
-        public FormPrincipal()
+        public FormFranciscoRocha()
         {
             InitializeComponent();
 
@@ -129,7 +129,7 @@ namespace FormFranciscoRocha
                 }
                 else
                 {
-                    Archivos<Producto>.GuardarFabrica(miAlmacen);
+                    Archivos<Producto>.GuardarFabricaEnXml(miAlmacen);
                     MessageBox.Show("Se guardaron los datos en: " + miAlmacen.Directorio, "Guardado correcto");
                 }
             }
@@ -158,7 +158,7 @@ namespace FormFranciscoRocha
 
                     if (Confirmacion == DialogResult.OK)
                     {
-                        miAlmacen = Archivos<Producto>.CargarFabrica(miAlmacen);
+                        miAlmacen = Archivos<Producto>.CargarFabricaDelXml(miAlmacen);
                         MessageBox.Show("Se cargaron los datos del XML", "Cargado correctamente");
                         this.ActualizarCantidadSQL();
                     }
@@ -197,7 +197,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonEliminar_Click(object sender, EventArgs e)
+        private void ButtonEliminar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -237,7 +237,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonXMLaSQL_Click(object sender, EventArgs e)
+        private void ButtonXMLaSQL_Click(object sender, EventArgs e)
         {
             try
             {
@@ -274,7 +274,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonMinimizar_Click(object sender, EventArgs e)
+        private void ButtonMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
@@ -301,7 +301,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonCerrar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonCerrar.BackgroundImage = FormFranciscoRocha.Properties.Resources.Cerrar;
+            this.ButtonCerrar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Cerrar;
         }
 
         /// <summary>
@@ -321,7 +321,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonFabricarPC_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonFabricarPC.BackgroundImage = FormFranciscoRocha.Properties.Resources.FabricarPC;
+            this.ButtonFabricarPC.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.FabricarPC;
         }
 
         /// <summary>
@@ -341,7 +341,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonFabricarCelular_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonFabricarCelular.BackgroundImage = FormFranciscoRocha.Properties.Resources.Screenshot_2;
+            this.ButtonFabricarCelular.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.Screenshot_2;
         }
 
         /// <summary>
@@ -361,7 +361,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonMostrar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonMostrar.BackgroundImage = FormFranciscoRocha.Properties.Resources.MostrarProductos;
+            this.ButtonMostrar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.MostrarProductos;
         }
 
         /// <summary>
@@ -381,7 +381,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonGuardar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonGuardar.BackgroundImage = FormFranciscoRocha.Properties.Resources.GuardarEnXML;
+            this.ButtonGuardar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.GuardarEnXML;
         }
 
         /// <summary>
@@ -401,7 +401,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void ButtonCargar_MouseEnter(object sender, EventArgs e)
         {
-            this.ButtonCargar.BackgroundImage = FormFranciscoRocha.Properties.Resources.CargarXML;
+            this.ButtonCargar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.CargarXML;
         }
 
         /// <summary>
@@ -419,9 +419,9 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonEliminar_MouseEnter(object sender, EventArgs e)
+        private void ButtonEliminar_MouseEnter(object sender, EventArgs e)
         {
-            this.buttonEliminar.BackgroundImage = FormFranciscoRocha.Properties.Resources.EliminarProducto;
+            this.buttonEliminar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.EliminarProducto;
         }
 
         /// <summary>
@@ -429,7 +429,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonEliminar_MouseLeave(object sender, EventArgs e)
+        private void ButtonEliminar_MouseLeave(object sender, EventArgs e)
         {
             this.buttonEliminar.BackgroundImage = null;
         }
@@ -441,7 +441,7 @@ namespace FormFranciscoRocha
         /// <param name="e"></param>
         private void CargarSQL_MouseEnter(object sender, EventArgs e)
         {
-            this.CargarSQL.BackgroundImage = FormFranciscoRocha.Properties.Resources.CargarDesdeSQL;
+            this.CargarSQL.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.CargarDesdeSQL;
         }
 
         /// <summary>
@@ -459,9 +459,9 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonXMLaSQL_MouseEnter(object sender, EventArgs e)
+        private void ButtonXMLaSQL_MouseEnter(object sender, EventArgs e)
         {
-            this.buttonXMLaSQL.BackgroundImage = FormFranciscoRocha.Properties.Resources.CargarXMLalSQL;
+            this.buttonXMLaSQL.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.CargarXMLalSQL;
         }
 
         /// <summary>
@@ -469,7 +469,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonXMLaSQL_MouseLeave(object sender, EventArgs e)
+        private void ButtonXMLaSQL_MouseLeave(object sender, EventArgs e)
         {
             this.buttonXMLaSQL.BackgroundImage = null;
         }
@@ -479,9 +479,9 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonMinimizar_MouseEnter(object sender, EventArgs e)
+        private void ButtonMinimizar_MouseEnter(object sender, EventArgs e)
         {
-            this.buttonMinimizar.BackgroundImage = FormFranciscoRocha.Properties.Resources.MinimizarFinal;
+            this.buttonMinimizar.BackgroundImage = global::FormFranciscoRocha.Properties.Resources.MinimizarFinal;
         }
 
         /// <summary>
@@ -489,7 +489,7 @@ namespace FormFranciscoRocha
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void buttonMinimizar_MouseLeave(object sender, EventArgs e)
+        private void ButtonMinimizar_MouseLeave(object sender, EventArgs e)
         {
             this.buttonMinimizar.BackgroundImage = null;
         }
@@ -503,22 +503,22 @@ namespace FormFranciscoRocha
 
         private void PanelMovimientoForm_MouseDown(object sender, MouseEventArgs e)
         {
-            Arrastrar = true;
-            PuntoInicio = new Point(e.X, e.Y);
+            arrastrar = true;
+            puntoInicio = new Point(e.X, e.Y);
         }
 
         private void PanelMovimientoForm_MouseMove(object sender, MouseEventArgs e)
         {
-            if (Arrastrar)
+            if (arrastrar)
             {
                 Point p = PointToScreen(e.Location);
-                this.Location = new Point(p.X - PuntoInicio.X, p.Y - PuntoInicio.Y);
+                this.Location = new Point(p.X - puntoInicio.X, p.Y - puntoInicio.Y);
             }
         }
 
         private void PanelMovimientoForm_MouseUp(object sender, MouseEventArgs e)
         {
-            Arrastrar = false;
+            arrastrar = false;
         }
         #endregion
 
@@ -540,7 +540,7 @@ namespace FormFranciscoRocha
                 {
                     this.miAlmacen += (Producto)PC.ProductoDelForm;
 
-                    if (SQL.InsertarPC((FabricaPC)PC.ProductoDelForm))
+                    if (SQL.InsertarPcSql((FabricaPC)PC.ProductoDelForm))
                     {
                         if (RefreshMostrar != null)
                         {
@@ -577,7 +577,7 @@ namespace FormFranciscoRocha
                 {
                     this.miAlmacen += (Producto)Celular.ProductoDelForm;
 
-                    if (SQL.InsertarCelular((FabricaCelular)Celular.ProductoDelForm))
+                    if (SQL.InsertarCelularSql((FabricaCelular)Celular.ProductoDelForm))
                     {
                         if (RefreshMostrar != null)
                         {
@@ -675,17 +675,17 @@ namespace FormFranciscoRocha
             {
                 Directorio();
 
-                XMLaSQL.XMLASQL(miAlmacen.Directorio);
+                XMLaSQL.XmlASql(miAlmacen.Directorio);
 
                 Thread.Sleep(3000);
 
-                MessageBox.Show("Se guardaron los datos del XML en la base de datos exitosamente!");
+                MessageBox.Show("Se guardaron los datos del XML en la base de datos exitosamente! Cuando quiera ver los cambios en el boton 'mostrar' carge los datos del SQL nuevamente");
 
                 this.ActualizarCantidadSQL();
             }
-            catch (ConexionSQLException ex)
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.InformarExcepcionSQL());
+                MessageBox.Show("Se encontraron datos repetidos en el XML y SQL");
                 Archivos<Producto>.LogErrores(ex.ToString());
             }
         }
@@ -705,13 +705,13 @@ namespace FormFranciscoRocha
                 SQLPC SQLPC = new SQLPC();
                 SQLCelular SQLCelular = new SQLCelular();
 
-                if (SQLPC.BorrarPC(UPC))
+                if (SQLPC.BorrarPcSql(UPC))
                 {
                     MessageBox.Show("La PC fabricada seleccionada se borro de la base de datos y del almacen");
                 }
                 else
                 {
-                    SQLCelular.BorrarCelular(UPC);
+                    SQLCelular.BorrarCelularSql(UPC);
                     MessageBox.Show("El Celular fabricado seleccionado se borro de la base de datos y del almacen");
                 }
             }
@@ -734,8 +734,8 @@ namespace FormFranciscoRocha
                 SQLPC PC = new SQLPC();
                 SQLCelular Celular = new SQLCelular();
 
-                this.miAlmacen = PC.ObtenerListaDato(this.miAlmacen);
-                this.miAlmacen = Celular.ObtenerListaDato(this.miAlmacen);
+                this.miAlmacen = PC.ObtenerListaPcSql(this.miAlmacen);
+                this.miAlmacen = Celular.ObtenerListaCelularSql(this.miAlmacen);
 
                 if(this.miAlmacen.CantidadGenerica > aux)
                 {
@@ -769,7 +769,7 @@ namespace FormFranciscoRocha
             {
                 SQLAlmacen Almacen = new SQLAlmacen();
 
-                Almacen.InsertarAlmacen(miAlmacen);
+                Almacen.InsertarAlmacenAlSql(miAlmacen);
 
                 this.ActualizarCantidadSQL();
             }
@@ -786,7 +786,7 @@ namespace FormFranciscoRocha
             {
                 SQLAlmacen Almacen = new SQLAlmacen();
 
-                Almacen.ModificarCantidad(this.miAlmacen);
+                Almacen.ModificarCantidadAlmacenDelSql(this.miAlmacen);
             }
             catch (ConexionSQLException ex)
             {

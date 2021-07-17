@@ -48,22 +48,22 @@ namespace Entidades
         /// <summary>
         /// Constructor de producto el cual se usa en PC Y Celular el cual asigna los valores mediante las propiedades
         /// </summary>
-        /// <param name="Marca">Marca del producto</param>
-        /// <param name="Gpu">Chip grafico del producto</param>
+        /// <param name="marca">Marca del producto</param>
+        /// <param name="gpu">Chip grafico del producto</param>
         /// <param name="memoriaRam">Memoria ram del producto</param>
         /// <param name="sistemaOperativo">Sistema operativo del producto</param>
         /// <param name="almacenamiento">Almacenamiento del producto</param>
-        /// <param name="CodigoDeBarras">Codigo de barras "UPC" del producto</param>
-        public Producto (MarcaCPU Marca, GPU Gpu, RAM memoriaRam, SistemaOP sistemaOperativo, Almacenamiento almacenamiento, int CodigoDeBarras)
+        /// <param name="codigoDeBarras">Codigo de barras "UPC" del producto</param>
+        public Producto (MarcaCPU marca, GPU gpu, RAM memoriaRam, SistemaOP sistemaOperativo, Almacenamiento almacenamiento, int codigoDeBarras)
         {
             try
             {
-                GRAFICOS = Gpu;
-                MARCA_CPU = Marca;
+                GRAFICOS = gpu;
+                MARCA_CPU = marca;
                 MEMORIA_RAM = memoriaRam;
                 ALMACENAMIENTO = almacenamiento;
                 SISTEMA_OPERATIVO = sistemaOperativo;
-                CODIGO_DE_BARRAS = CodigoDeBarras;
+                CODIGO_DE_BARRAS = codigoDeBarras;
             }
             catch (System.OverflowException ex)
             {
@@ -113,7 +113,7 @@ namespace Entidades
             {
                 StringBuilder sb = new StringBuilder();
                 string informacion = String.Format(" Marca CPU: {0} \n GPU: {1} \n RAM: {2} \n Sistema operativo: {3} \n Almacenamiento: {4} \n " +
-                                        "Codigo de barras: {5}", MARCA_CPU, this.Fix(GRAFICOS.ToString()), this.Fix(MEMORIA_RAM.ToString()), this.Fix(SISTEMA_OPERATIVO.ToString()), this.Fix(ALMACENAMIENTO.ToString()), CODIGO_DE_BARRAS);
+                                        "Codigo de barras: {5}", MARCA_CPU, this.RemoverGuionBajo(GRAFICOS.ToString()), this.RemoverGuionBajo(MEMORIA_RAM.ToString()), this.RemoverGuionBajo(SISTEMA_OPERATIVO.ToString()), this.RemoverGuionBajo(ALMACENAMIENTO.ToString()), CODIGO_DE_BARRAS);
 
                 sb.Append(informacion);
 

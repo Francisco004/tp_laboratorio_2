@@ -11,33 +11,33 @@ namespace Entidades
         /// Metodo el cual pasa los datos del archivo XML a la base de datos
         /// </summary>
         /// <param name="path">Directorio donde se encuentra el XML</param>
-        public static void XMLASQL(string path)
+        public static void XmlASql(string path)
         {
             #region Atributos
 
             //Producto
-            string UPC;
-            string GPU;
-            string Ram;
-            string MarcaCpu;
-            string SistemaOperativo;
-            string Almacenamiento;
+            string upc;
+            string gpu;
+            string ram;
+            string marcaCpu;
+            string sistemaOperativo;
+            string almacenamiento;
 
             //PC
-            string Procesador;
-            string Mother;
-            string Gabinete;
-            string Fuente;
-            string LectorCD;
+            string procesador;
+            string mother;
+            string gabinete;
+            string fuente;
+            string lectorCd;
 
             //Celular
-            string Camara;
-            string Bateria;
-            string Carcasa;
-            string Pulgadas;
-            string Resolucion;
-            string Jack;
-            string Huella;
+            string camara;
+            string bateria;
+            string carcasa;
+            string pulgadas;
+            string resolucion;
+            string jack;
+            string huella;
             #endregion
 
             using (XmlReader reader = XmlReader.Create(path))
@@ -48,34 +48,34 @@ namespace Entidades
                     {
                         if (reader.IsStartElement("GRAFICOS"))
                         {
-                            GPU = reader.ReadElementContentAsString();
-                            UPC = reader.ReadElementContentAsString();
-                            Ram = reader.ReadElementContentAsString();
-                            MarcaCpu = reader.ReadElementContentAsString();
-                            SistemaOperativo = reader.ReadElementContentAsString();
-                            Almacenamiento = reader.ReadElementContentAsString();
+                            gpu = reader.ReadElementContentAsString();
+                            upc = reader.ReadElementContentAsString();
+                            ram = reader.ReadElementContentAsString();
+                            marcaCpu = reader.ReadElementContentAsString();
+                            sistemaOperativo = reader.ReadElementContentAsString();
+                            almacenamiento = reader.ReadElementContentAsString();
 
-                            if (GPU[0] == 'R' || GPU[0] == 'G')
+                            if (gpu[0] == 'R' || gpu[0] == 'G')
                             {
-                                Procesador = reader.ReadElementContentAsString();
-                                Mother = reader.ReadElementContentAsString();
-                                Gabinete = reader.ReadElementContentAsString();
-                                Fuente = reader.ReadElementContentAsString();
-                                LectorCD = reader.ReadElementContentAsString();
+                                procesador = reader.ReadElementContentAsString();
+                                mother = reader.ReadElementContentAsString();
+                                gabinete = reader.ReadElementContentAsString();
+                                fuente = reader.ReadElementContentAsString();
+                                lectorCd = reader.ReadElementContentAsString();
 
-                                PCXMLToSQL(GPU, UPC, Ram, MarcaCpu, SistemaOperativo, Almacenamiento, Procesador, Mother, Gabinete, Fuente, LectorCD);
+                               PcXmlToSql(gpu, upc, ram, marcaCpu, sistemaOperativo, almacenamiento, procesador, mother, gabinete, fuente, lectorCd);
                             }
                             else
                             {
-                                Camara = reader.ReadElementContentAsString();
-                                Bateria = reader.ReadElementContentAsString();
-                                Carcasa = reader.ReadElementContentAsString();
-                                Pulgadas = reader.ReadElementContentAsString();
-                                Resolucion = reader.ReadElementContentAsString();
-                                Jack = reader.ReadElementContentAsString();
-                                Huella = reader.ReadElementContentAsString();
+                                camara = reader.ReadElementContentAsString();
+                                bateria = reader.ReadElementContentAsString();
+                                carcasa = reader.ReadElementContentAsString();
+                                pulgadas = reader.ReadElementContentAsString();
+                                resolucion = reader.ReadElementContentAsString();
+                                jack = reader.ReadElementContentAsString();
+                                huella = reader.ReadElementContentAsString();
 
-                                CelularXMLToSQL(GPU, UPC, Ram, MarcaCpu, SistemaOperativo, Almacenamiento, Camara, Bateria, Carcasa, Pulgadas, Resolucion, Jack, Huella);
+                                CelularXmlToSql(gpu, upc, ram, marcaCpu, sistemaOperativo, almacenamiento, camara, bateria, carcasa, pulgadas, resolucion, jack, huella);
                             }
                         }
                     }
@@ -97,7 +97,7 @@ namespace Entidades
         /// <param name="gabinete"></param>
         /// <param name="fuente"></param>
         /// <param name="lector"></param>
-        private static void PCXMLToSQL(string gpu, string upc, string ram, string marca, string sistemaOP, string almacenamiento, string procesador, string mother, string gabinete, string fuente, string lector)
+        private static void PcXmlToSql(string gpu, string upc, string ram, string marca, string sistemaOp, string almacenamiento, string procesador, string mother, string gabinete, string fuente, string lector)
         {
             int UPC = Convert.ToInt32(upc);
 
@@ -106,7 +106,7 @@ namespace Entidades
             Fuente EFuente = (Fuente)Enum.Parse(typeof(Fuente), fuente);
             MarcaCPU EMarca = (MarcaCPU)Enum.Parse(typeof(MarcaCPU), marca);
             Gabinete EGabinete = (Gabinete)Enum.Parse(typeof(Gabinete), gabinete);
-            SistemaOP ESistemaOp = (SistemaOP)Enum.Parse(typeof(SistemaOP), sistemaOP);
+            SistemaOP ESistemaOp = (SistemaOP)Enum.Parse(typeof(SistemaOP), sistemaOp);
             Motherboard EMother = (Motherboard)Enum.Parse(typeof(Motherboard), mother);
             Procesador EProcesador = (Procesador)Enum.Parse(typeof(Procesador), procesador);
             Almacenamiento EAlmacenamiento = (Almacenamiento)Enum.Parse(typeof(Almacenamiento), almacenamiento);
@@ -115,7 +115,7 @@ namespace Entidades
 
             SQLPC SQL = new SQLPC();
 
-            SQL.InsertarPC(SQLPC);
+            SQL.InsertarPcSql(SQLPC);
         }
 
         /// <summary>
@@ -134,7 +134,7 @@ namespace Entidades
         /// <param name="resolucion"></param>
         /// <param name="jack"></param>
         /// <param name="huella"></param>
-        private static void CelularXMLToSQL(string gpu, string upc, string ram, string marca, string sistemaOP, string almacenamiento, string camara, string bateria, string carcasa, string pulgadas, string resolucion, string jack, string huella)
+        private static void CelularXmlToSql(string gpu, string upc, string ram, string marca, string sistemaOp, string almacenamiento, string camara, string bateria, string carcasa, string pulgadas, string resolucion, string jack, string huella)
         {
             int UPC = Convert.ToInt32(upc);
 
@@ -143,18 +143,18 @@ namespace Entidades
             Camara ECamara = (Camara)Enum.Parse(typeof(Camara), camara);
             MarcaCPU EMarca = (MarcaCPU)Enum.Parse(typeof(MarcaCPU), marca);
             Bateria EBateria = (Bateria)Enum.Parse(typeof(Bateria), bateria);
-            SistemaOP ESistemaOp = (SistemaOP)Enum.Parse(typeof(SistemaOP), sistemaOP);
+            SistemaOP ESistemaOp = (SistemaOP)Enum.Parse(typeof(SistemaOP), sistemaOp);
             MaterialCarcasa EMaterial = (MaterialCarcasa)Enum.Parse(typeof(MaterialCarcasa), carcasa);
             PantallaPulgadas EPulgadas = (PantallaPulgadas)Enum.Parse(typeof(PantallaPulgadas), pulgadas);
             Almacenamiento EAlmacenamiento = (Almacenamiento)Enum.Parse(typeof(Almacenamiento), almacenamiento);
            
             PantallaResolucion EResolucion = (PantallaResolucion)Enum.Parse(typeof(PantallaResolucion), resolucion);
 
-            FabricaCelular SQLPC = new FabricaCelular(EMarca, EGpu, ERam, ESistemaOp, EAlmacenamiento, UPC, ECamara, EBateria, EMaterial, EPulgadas, EResolucion, BoolRetorno(jack), BoolRetorno(huella));
+            FabricaCelular SQLCelular = new FabricaCelular(EMarca, EGpu, ERam, ESistemaOp, EAlmacenamiento, UPC, ECamara, EBateria, EMaterial, EPulgadas, EResolucion, BoolRetorno(jack), BoolRetorno(huella));
 
             SQLCelular SQL = new SQLCelular();
 
-            SQL.InsertarCelular(SQLPC);
+            SQL.InsertarCelularSql(SQLCelular);
         }
 
         /// <summary>
